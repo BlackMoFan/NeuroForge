@@ -4,20 +4,20 @@ This is a Flask-based web application project. The project is designed to demons
 
 ## Project Structure
 
-DMFlask/
-├── app.py # Main Flask application file
-├── requirements.txt # Python dependencies
-├── Dockerfile # Docker configuration
-├── .gitignore # Git ignore file
-├── static/ # Static files (CSS, JS, images)
-├── templates/ # HTML templates
-├── models/ # Machine learning models
-│ ├── GRUModels/
-│ ├── LSTMModelsC/
-│ ├── Bi-LSTMModelsC/
-│ └── Regression/
-├── tokenizers/ # Tokenizers for the models
-└── README.md # Project documentation
+    DMFlask/
+    ├── app.py # Main Flask application file
+    ├── requirements.txt # Python dependencies
+    ├── Dockerfile # Docker configuration
+    ├── .gitignore # Git ignore file
+    ├── static/ # Static files (CSS, JS, images)
+    ├── templates/ # HTML templates
+    ├── models/ # Machine learning models
+    │ ├── GRUModels/
+    │ ├── LSTMModelsC/
+    │ ├── Bi-LSTMModelsC/
+    │ └── Regression/
+    ├── tokenizers/ # Tokenizers for the models
+    └── README.md # Project documentation
 
 ---
 
@@ -46,9 +46,7 @@ Before running the project, ensure you have the following installed:
 
 ## Setup Instructions
 
-### 1. Clone the Repository
-
-Clone the repository to your local machine:
+1. Clone the Repository
 
 ```bash
 git clone <repository-url>
