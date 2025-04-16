@@ -1,0 +1,53 @@
+# Group 1 | BSCS 3B | NLP & Data Mining Flask Activity
+
+---
+
+### Requirements:
+
+1. Tensorflow GPU (Please follow installation requirements [here](https://www.tensorflow.org/install/pip#windows-native)
+2. Anaconda (miniconda for lighter load)
+
+
+---
+
+
+### How to build locally:
+
+
+1. Create and activate environment using conda
+
+	` conda create --name tf python=3.9 `
+
+	` conda activate tf `
+
+2. Install the CUDA, cuDNN with conda
+	
+	` conda install -c conda-forge cudatoolkit=11.2 cudnn=8.1.0 `
+
+3. Update pip
+
+	` pip install --upgrade pip `
+
+	> Note: A warning will be displayed. Make sure to follow what the warning says.
+
+4. Install tensorflow
+
+	` pip install "tensorflow<2.11"  `
+
+5. Verify install
+
+	` python -c "import tensorflow as tf; print(tf.config.list_physical_devices('GPU'))" `
+
+6. Install requirements.txt
+
+	` pip install -r requirements.txt `
+
+7. Setup and run flask
+
+	` set FLASK_APP=app.py `
+
+	` flask run `
+
+---
+
+Or you can view the recording of the app's performance in [this google drive](https://drive.google.com/drive/folders/1vfffwHxxLBtw89ORsE3nXuFiQCP8Vp8x)

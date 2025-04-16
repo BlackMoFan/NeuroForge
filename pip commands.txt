@@ -1,0 +1,8 @@
+pip install "tensorflow<2.11"
+pip install nltk
+pip install regex
+pip install pandas
+pip install numpy
+pip install matplotlib
+pip install scikit-learn
+pip install flask
