@@ -31,6 +31,23 @@
 </head>
 <body>
 
+<!-- Modal for Demo Message -->
+<div id="demoModal" class="modal" style="display: none;">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Disclaimer</h5>
+      </div>
+      <div class="modal-body">
+        <p>This is for demo only and does not actually run the models.</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn close-modal btn-secondary" aria-label="Close" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
 <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
   <symbol id="hamburger" xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512">
 		<title>Filter</title><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32" d="M32 144h448M112 256h288M208 368h96"/>
@@ -175,10 +192,10 @@
         <div class="resultFields resultPrediction">
           <p>Predictions:</p>
           <ol>
-            <!-- {{ nbPredictedWord }} -->
-            {% for item in nbPredictedWord %}
-              <li>{{ item }}</li>
-            {% endfor %}
+            {{ nbPredictedWord }}
+            <!-- {% for item in nbPredictedWord %}
+              <li>{{ nbPredictedWord }}</li>
+            {% endfor %} -->
           </ol>
           <div class="">
             <p>Accuracy:</p>
@@ -194,6 +211,18 @@
 	
 	
 </div><!--billboard-->
+
+<script>
+  // JavaScript to handle modal display
+  const modal = document.getElementById("demoModal");
+  if (modal) {
+    modal.style.display = "block";
+    const closeButton = modal.querySelector(".close-modal");
+    closeButton.addEventListener("click", () => {
+      modal.style.display = "none";
+    });
+  }
+</script>
 
 
 <script src="{{ url_for('static', filename='js/jquery-1.11.0.min.js')}}"></script>
